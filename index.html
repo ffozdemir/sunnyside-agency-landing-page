@@ -40,7 +40,11 @@
             media="(min-width: 48rem )"
             srcset="./images/desktop/image-header.jpg"
           />
-          <img class="image-header" src="./images/mobile/image-header.jpg" alt="Half orange" />
+          <img
+            class="image-header"
+            src="./images/mobile/image-header.jpg"
+            alt="Half orange"
+          />
         </picture>
       </div>
     </header>
@@ -134,7 +138,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="testimonials-section">
         <h2>Client testimonials</h2>
         <div class="profiles">
           <div class="profile">
@@ -173,12 +177,13 @@
         </div>
       </section>
 
-      <section>
+      <section class="gallery-section">
         <picture>
           <source
             srcset="./images/desktop/image-gallery-milkbottles.jpg"
             media="(min-width: 48rem)" />
           <img
+            class="gallery-img"
             src="./images/mobile/image-gallery-milkbottles.jpg"
             alt="Three milk bottle"
             loading="lazy"
@@ -189,6 +194,7 @@
             srcset="./images/desktop/image-gallery-orange.jpg"
             media="(min-width: 48rem)" />
           <img
+            class="gallery-img"
             src="./images/mobile/image-gallery-orange.jpg"
             alt="A plate of orange"
             loading="lazy"
@@ -199,6 +205,7 @@
             srcset="./images/desktop/image-gallery-cone.jpg"
             media="(min-width: 48rem)" />
           <img
+            class="gallery-img"
             src="./images/mobile/image-gallery-cone.jpg"
             alt="A cone without icecream"
             loading="lazy"
@@ -209,6 +216,7 @@
             srcset="./images/desktop/image-gallery-sugarcubes.jpg"
             media="(min-width: 48rem)" />
           <img
+            class="gallery-img"
             src="./images/mobile/image-gallery-sugar-cubes.jpg"
             alt="Too many sugar cubs"
             loading="lazy"
@@ -217,13 +225,13 @@
       </section>
     </main>
     <footer>
-      <img src="./images/logo.svg" alt="Sunnyside’s Logo" />
-      <ul>
+      <img class="footer-logo" src="./images/logo.svg" alt="Sunnyside’s Logo" />
+      <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
-      <ul>
+      <ul class="footer-logos">
         <li>
           <a href="https://facebook.com" target="_blank"
             ><img src="./images/icon-facebook.svg" alt="Facebook Logo"
