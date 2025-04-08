@@ -39,6 +39,7 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
+  --header-color: #3ebeff;
 
   --font-normal: 1.125rem;
 
@@ -54,4 +55,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-family-barlow);
+}
+
+nav {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: var(--font-weight-700);
+}
+
+.header-hero {
+  position: relative;
+}
+
+.header-hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+.header-hero-text h1 {
+  color: var(--white);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: --font-family-fraunces;
+  font-weight: var(--font-weight-900);
+}
+
+.header-hero-text img {
+  width: 30px;
+}
+
+.image-header {
+  width: 100%;
 }
