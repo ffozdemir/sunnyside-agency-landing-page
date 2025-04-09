@@ -22,13 +22,19 @@
     <header>
       <nav>
         <img src="./images/logo.svg" alt="Sunnyside's Logo" />
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        <div id="nav-el" class="nav-item">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a id="contact-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          id="icon-hamburger"
+          src="./images/icon-hamburger.svg"
+          alt="icon-hamburger"
+        />
       </nav>
       <div class="header-hero">
         <div class="header-hero-text">
@@ -98,43 +104,49 @@
           <a class="soft-red" href="#">Learn more</a>
         </div>
 
-        <div>
+        <div class="article-text-photo">
           <picture>
             <source
               srcset="./images/desktop/image-graphic-design.jpg"
               media="(min-width: 48rem)"
             />
             <img
+              class="article-photo-under-text"
               src="./images/mobile/image-graphic-design.jpg"
               alt="Cherry"
               loading="lazy"
             />
           </picture>
-          <h2>Graphic design</h2>
-          <p>
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
+          <div class="article-text-on-photo cyan">
+            <h2>Graphic Design</h2>
+            <p>
+              Great Design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
         </div>
 
-        <div>
+        <div class="article-text-photo">
           <picture>
             <source
               srcset="./images/desktop/image-photography.jpg"
               media="(min-width: 48rem)"
             />
             <img
+              class="article-photo-under-text"
               src="./images/mobile/image-photography.jpg"
               alt="orange"
               loading="lazy"
             />
           </picture>
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
+          <div class="article-text-on-photo dark-blue">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -254,5 +266,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
