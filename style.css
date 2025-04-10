@@ -58,7 +58,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--font-family-barlow);
 }
 
@@ -148,7 +148,7 @@ header {
   font-size: 2.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  font-family: --font-family-fraunces;
+  font-family: var(--font-family-fraunces);
   font-weight: var(--font-weight-900);
 }
 
@@ -433,12 +433,11 @@ footer {
   }
 
   #contact-link {
-    transition-duration: 0.6s;
+    transition: background-color 0.6s;
   }
 
   #contact-link:active,
   #contact-link:hover {
-    /* background-color: #6FCEFE; */
     background-color: #6fcefe;
     opacity: 0.9;
     color: var(--white);
