@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/ffozdemir/sunnyside-agency-landing-page)
-- [Live Site URL](https://ffozdemir.github.io/sunnyside-agency-landing-page/)
+- [Live Site URL](https://precious-biscochitos-1e8e40.netlify.app)
 
 ## My Process
 
