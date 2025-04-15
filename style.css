@@ -30,16 +30,16 @@
 :root {
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
-  --dark-desaturated-cyan: #2c7464;
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
-  --dark-moderate-cyan: #8fd3c4;
+  --dark-moderate-cyan: hsl(168, 34%, 72%);
 
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
-  --header-color: #3ebeff;
+  --primary-header-color: #3ebeff;
 
   --font-normal: 1.125rem;
 
@@ -47,7 +47,7 @@
   --font-weight-700: 700;
   --font-weight-900: 900;
 
-  --font-family-barlow: "Barlow", sans-serif;
+  --font-family-primary: "Barlow", sans-serif;
   --font-family-fraunces: "Fraunces", serif;
 }
 
@@ -59,11 +59,11 @@
 
 body {
   min-height: 100vh;
-  font-family: var(--font-family-barlow);
+  font-family: var(--font-family-primary);
 }
 
 nav {
-  background-color: var(--header-color);
+  background-color: var(--primary-header-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,6 +121,7 @@ header {
   border-radius: 50px;
   text-transform: uppercase;
   color: var(--very-dark-desaturated-blue);
+  transition: background-color 0.6s;
 }
 
 #icon-hamburger {
@@ -258,7 +259,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* font-size: clamp(1rem, 0.75rem + 1vw, 2rem); */
+  /* font-size: clamp(1rem, 0.75rem + 1vw, 2rem); */ /* Commented out for now as it may cause inconsistent font sizes on some devices */
   /* clamp(minimum, degisken, maximum) */
 }
 
@@ -340,6 +341,11 @@ footer {
 
 .dark-blue {
   color: var(--dark-blue);
+}
+@media (min-width: 1024px) {
+  .article-text {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
