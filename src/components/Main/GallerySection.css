@@ -1,0 +1,19 @@
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-section picture {
+  width: 50%;
+}
+
+.gallery-section picture img {
+  height: 100%;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .gallery-section picture {
+    width: 25%;
+  }
+}

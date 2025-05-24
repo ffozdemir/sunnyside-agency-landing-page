@@ -7,6 +7,7 @@ import ImageGraphicDesignMobile from "../../../assets/images/mobile/image-graphi
 import ImagePhotographyDesktop from "../../../assets/images/desktop/image-photography.jpg";
 import ImagePhotographyMobile from "../../../assets/images/mobile/image-photography.jpg";
 import PictureComponent from "./PictureComponent";
+import "./ArticleSection.css";
 
 const ArticleSection = () => {
   return (
@@ -26,7 +27,7 @@ const ArticleSection = () => {
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <a className="yellow" href="#">
+        <a className="yellow" href="/">
           Learn more
         </a>
       </div>
@@ -46,7 +47,7 @@ const ArticleSection = () => {
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <a className="soft-red" href="#">
+        <a className="soft-red" href="/">
           Learn more
         </a>
       </div>

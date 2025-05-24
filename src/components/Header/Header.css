@@ -1,0 +1,145 @@
+/* Navigation Styles */
+nav {
+  background-color: var(--primary-header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: var(--font-weight-700);
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav-item {
+  display: none;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+}
+
+.mobile-nav-items {
+  display: block;
+}
+
+.mobile-nav-items ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: 10%;
+  background-color: var(--white);
+  width: 75%;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.mobile-nav-items li a {
+  color: var(--dark-grayish-blue);
+}
+
+#contact-link {
+  padding: 10px 20px;
+  background-color: var(--yellow);
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: var(--very-dark-desaturated-blue);
+  transition: background-color 0.6s;
+}
+
+#icon-hamburger {
+  max-width: 20px;
+}
+
+/* Header Hero Styles */
+.header-hero {
+  position: relative;
+}
+
+.header-hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+.header-hero-text h1 {
+  color: var(--white);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: var(--font-family-fraunces);
+  font-weight: var(--font-weight-900);
+}
+
+.header-hero-text img {
+  width: 30px;
+}
+
+.image-header {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .nav-item {
+    display: flex;
+  }
+
+  .nav-item ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  nav img {
+    width: 13%;
+  }
+
+  .nav-item ul li a {
+    font-size: 1.1rem;
+  }
+
+  #icon-hamburger {
+    display: none;
+  }
+
+  #contact-link {
+    background-color: var(--white);
+    transition: background-color 0.6s;
+  }
+
+  #contact-link:active,
+  #contact-link:hover {
+    background-color: #6fcefe;
+    opacity: 0.9;
+    color: var(--white);
+  }
+
+  .header-hero-text h1 {
+    font-size: 4rem;
+  }
+}

@@ -2,6 +2,7 @@ import ImageEmily from "../../../assets/images/image-emily.jpg";
 import ImageThomas from "../../../assets/images/image-thomas.jpg";
 import ImageJennie from "../../../assets/images/image-jennie.jpg";
 import Profile from "./Profile";
+import "./TestimonialSection.css";
 
 const TestimonialSection = () => {
   return (

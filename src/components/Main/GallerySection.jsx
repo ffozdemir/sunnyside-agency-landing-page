@@ -7,6 +7,7 @@ import ImageGalleryConeMobile from "../../assets/images/mobile/image-gallery-con
 import ImageGallerySugarCubesDesktop from "../../assets/images/desktop/image-gallery-sugarcubes.jpg";
 import ImageGallerySugarCubesMobile from "../../assets/images/mobile/image-gallery-sugar-cubes.jpg";
 import PictureComponent from "./Article/PictureComponent";
+import "./GallerySection.css";
 
 const GallerySection = () => {
   return (
