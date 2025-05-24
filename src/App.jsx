@@ -9,11 +9,9 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <ArticleSection />
-        <TestimonialSection />
-        <GallerySection />
-      </main>
+      <ArticleSection />
+      <TestimonialSection />
+      <GallerySection />
       <Footer />
     </>
   );
