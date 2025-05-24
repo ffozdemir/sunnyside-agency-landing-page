@@ -1,17 +1,20 @@
-const PictureComponent = (props) => {
+const PictureComponent = ({
+  desktopImage,
+  mobileImage,
+  altText,
+  pictureClass,
+}) => {
   return (
-    
-      <picture>
-        <source srcSet={props.desktopImage} media="(min-width: 48rem)" />
-        <img
-          className={props.pictureClass || ""}
-          src={props.mobileImage}
-          alt={props.altText}
-          loading="lazy"
-          decoding="async"
-        />
-      </picture>
-    
+    <picture>
+      <source srcSet={desktopImage} media="(min-width: 48rem)" />
+      <img
+        className={pictureClass || ""}
+        src={mobileImage}
+        alt={altText}
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
   );
 };
 
